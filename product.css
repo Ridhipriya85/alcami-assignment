@@ -1,0 +1,395 @@
+.products {
+    background-color: white;
+}
+
+.products .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.products .stars {
+    display: flex;
+    margin-right: 10px;
+}
+
+.products .star {
+    color: #f8b84e;
+    font-size: 20px;
+}
+
+.products .rating-text {
+    color: #777;
+    font-size: 16px;
+}
+
+.products .description {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Flavor Section */
+.products .flavor-options {
+    display: flex;
+}
+
+.products .flavor-card {
+    min-width: 180px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    background-color: #F9F9F9;
+    margin: 10px;
+}
+
+.products .flavor-card input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.products .flavor-label {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 0 15px;
+    cursor: pointer;
+    color: #919798;
+}
+
+.products .radio-custom {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.products .flavor-card input[type="radio"]:checked + .flavor-label .flavor-label-top .radio-custom {
+    border-color: #FFB545;
+}
+
+.products .flavor-card input[type="radio"]:checked + .flavor-label .flavor-label-top .radio-custom::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #9E6718, #FFB545);
+}
+
+.products .flavor-card input[type="radio"]:checked + .flavor-label .flavor-label-top span {
+    background: linear-gradient(to right, #9E6718, #FFB545);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+
+.products .product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.products .product-image {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.products .best-seller {
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px 0 6px 0;
+    width: fit-content;
+    margin-left: auto;
+}
+
+/* Subscription Section */
+.products .subscription-section {
+    margin-bottom: 30px;
+}
+
+.products .subscription-header {
+    background-color: #c8a063;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 1px;
+}
+
+.products .subscription-header h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.products .subscription-option {
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    margin-bottom: 1px;
+    background-color: #fff;
+}
+
+.products .subscription-option:last-of-type {
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
+}
+
+.products .option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.products .subscription-label {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.products .price {
+    text-align: right;
+}
+
+.products .current-price {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.products .original-price {
+    font-size: 18px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.products .included-items {
+    display: flex;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.products .included-item {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.products .free-text {
+    color: #c8a063;
+}
+
+.products .included-image {
+    max-width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+
+.products .free-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products .free-item {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.products .plus {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #999;
+}
+
+.products .benefits {
+    margin: 20px;
+}
+
+.products .benefit {
+    display: flex;
+    align-items: flex-start;
+}
+
+.products .checkmark {
+    color: #4CAF50;
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.products .benefit-text {
+    font-size: 16px;
+}
+
+.products .add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    background-color: #5a7247;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.products .add-to-cart:hover {
+    background-color: #4a6037;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .products .flavor-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products .flavor-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .products .product-image-container {
+        margin-top: 20px;
+    }
+
+    .products .product-image {
+        height: auto;
+    }
+
+    .products .included-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products .option-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .products .price {
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .products .subscription-option {
+        margin-bottom: 15px;
+    }
+
+    .products .add-to-cart {
+        font-size: 16px;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .products .rating-text {
+        font-size: 14px;
+    }
+
+    .products .description {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .products .flavor-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products .flavor-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .products .product-image-container {
+        margin-top: 20px;
+    }
+
+    .products .product-image {
+        height: auto;
+    }
+
+    .products .included-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products .option-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .products .price {
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .products .add-to-cart {
+        font-size: 16px;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products .rating-text {
+        font-size: 12px;
+    }
+
+    .products .description {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .products .product-image {
+        height: 100px;
+    }
+
+    .products .add-to-cart {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .products .subscription-header h3 {
+        font-size: 18px;
+    }
+
+    .products .subscription-option {
+        margin-bottom: 15px;
+    }
+
+    .products .free-item {
+        width: 60px;
+        height: 60px;
+    }
+}

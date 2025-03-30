@@ -1,0 +1,23 @@
+.flex {
+    display: flex;
+  }
+  
+  .text-left {
+      text-align: left;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .gradient-container {
+    background: linear-gradient(to right, #9E6718, #FFB545);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(to right, #9E6718, #FFB545);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+  }
+  
